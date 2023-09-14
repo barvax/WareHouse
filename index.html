@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Warehouse App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Chemical Warehouse</h1>
+    </header>
+    <main>
+        <section id="materials">
+            <h2>Materials</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Material Name <input type="text" id="filterMaterialName"></th>
+                        <th>CAS Number <input type="text" id="filterCasNumber"></th>
+                        <th>IUPAC Name <input type="text" id="filterIupacName"></th>
+                        <th>Chemical Formula<input type="text" id="filterChemicalFormula"></th>
+                        <th>Hazard Codes<input type="text" id="filterHazardCodes"></th>
+                        <th>Boiling Point<input type="text" id="filterBoilingPoint"></th>
+                        <th>Melting Point<input type="text" id="filterMeltingPoint"></th>
+                        <th>Risk Codes<input type="text" id="filterRiskCodes"></th>
+                        <th>Storage Conditions<input type="text" id="filterStorageConditions"></th>
+                        <th>Item ID<input type="text" id="filterItemID"></th>
+                        <th>API Code 1<input type="text" id="filterAPICode1"></th>
+                        <th>API Code 2<input type="text" id="filterAPICode2"></th>
+                        <th>API Code 3<input type="text" id="filterAPICode3"></th>
+                        <th>Comments<input type="text" id="filterComments"></th>
+                    </tr>
+                    <tr>
+                        
+                        <!-- Add input fields for other columns as needed -->
+                    </tr>
+                </thead>
+                <tbody id="material-list">
+                    <!-- Material rows will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>
