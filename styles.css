@@ -43,3 +43,60 @@ table th {
 #material-list tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+/* Add this CSS to your existing styles.css or in a new CSS file */
+/* Hide the material-details div by default */
+#material-details {
+    display: none;
+}
+
+/* Style the tabs */
+.tabs {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.tablinks {
+    padding: 10px 20px;
+    cursor: pointer;
+    border: none;
+    background-color: #f2f2f2;
+}
+
+.tabcontent {
+    display: none;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+#batchItem{
+    display: none;
+}
+#createBatch{
+    display: none;
+}
+#quickPull{
+    display: none;
+}
+#requests{
+    display: none;
+}
+.navbar {
+    background-color: #333; /* Set the background color */
+    overflow: hidden; /* Ensure that content does not overflow */
+}
+
+/* Style the navigation bar links */
+.navbar a {
+    float: left; /* Float the links to the left */
+    display: block; /* Display the links as block elements */
+    color: white; /* Set the text color to white */
+    text-align: center; /* Center-align the text */
+    padding: 14px 16px; /* Add padding to the links */
+    text-decoration: none; /* Remove underlines from the links */
+}
+
+/* Change color on hover */
+.navbar a:hover {
+    background-color: #ddd; /* Change the background color on hover */
+    color: black; /* Change the text color on hover */
+}

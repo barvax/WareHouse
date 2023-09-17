@@ -5,8 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Chemical Warehouse App</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="batchForm.css">
 </head>
 <body>
+        <!-- Navigation bar -->
+        <div class="navbar">
+            <a onclick="openNavTab(mainTable)">Materials</a>
+            <a onclick="openNavTab(quickPull)">Quick pull</a>
+            <a onclick="openNavTab(requests)">Requests</a>
+            <!-- Add more links as needed -->
+        </div>
     <header>
         <h1>Chemical Warehouse</h1>
     </header>
@@ -41,7 +49,86 @@
                 </tbody>
             </table>
         </section>
+        <div id="material-details" class="hidden">
+            <h2>Material Details</h2>
+            <button onclick="CloseMaterialDetails()">Close</button>
+            <button onclick="AddBatch()">Add Batch</button>
+            <!-- Tabs for Material Properties and Batches -->
+            <div class="tabs">
+                <button class="tablinks" onclick="openTab(event, 'material-properties')">Material Properties</button>
+                <button class="tablinks" onclick="openTab(event, 'batches')">Batches</button>
+            </div>
+            <!-- Material Properties Tab -->
+            <div id="material-properties" class="tabcontent">
+                <!-- Material properties will be displayed here -->
+                <h1>ron</h1>
+            </div>
+            <!-- Batches Tab -->
+            <div id="batches" class="tabcontent">
+              
+                <h3 id="batches-materialName">Material Name</h3>
+                    <h3 id="batches-batchID">Batches</h3>
+                  
+                   
+                    <table id="batches-table">
+                        <thead>
+                            <tr>
+                                <th>Batch Number</th>
+                                <th>Amount</th>
+                                <th>Package</th>
+                                <th>Total Amount</th>
+                                <th>Supplier</th>
+                                <th>External Batch Number</th>
+                                <th>Entry Date</th>
+                                <th>Expiry Date</th>
+                                <th>Location</th>
+                                <th>Shelf</th>
+                                <th>Batch Description</th>
+                                <th>Comments</th>
+                                <th>Ordered By</th>
+                                <th>Is For Distribution</th>
+                                <th>Destination Distribution</th>
+                                <th>Project</th>
+                                <th>Package Left</th>
+                                <th>Total Amount Left</th>
+                                <!-- Add more batch properties here -->
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Batch data will be displayed here -->
+                        </tbody>
+                    </table>
+                    <div id="batchItem" >
+                        <button onclick="ReturnToBatchesTable()">Close</button>
+                        <form id="material-details-form">
+                 
+                        </form>
+                       
+                    </div>
+                    <div id="createBatch" >
+                        <button onclick="ReturnToBatchesTable()">Close</button>
+                        <button onclick="CreateBatchFrom()">Create Batch</button>
+                        <form id="createBatchForm">
+                 
+                        </form>
+                       
+                    </div>
+             
+            </div>
+        </div>
     </main>
+    <!-- Batches Tab -->
+    <div id="quickPull">
+        quickPull
+    </div>
+    <div id="requests">
+        requests
+    </div>
+
+   
     <script src="app.js"></script>
+    <script src="index.js"></script>
+    <script src="quickPull.js"></script>
+ 
 </body>
 </html>
